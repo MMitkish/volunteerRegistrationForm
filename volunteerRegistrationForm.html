@@ -1,0 +1,182 @@
+<html>
+    <head>
+        <title> PFFVolunteerRegistrationForm
+        </title>
+    </head>
+
+    <form action="cgi-bin/formmail.pl" method="post">
+        Philadelphia Folk Festival 2019 Volunteer Registration form
+        <p>
+        First Name:* <input type="text" name="firstName" value="" size="25" maxlength="50" />
+      </p>
+        <p>
+        Last Name:* <input type="text" name="lastName" value="" size="25" maxlength="50"/>
+      </p>
+        <p>
+        Nickname:
+        <br>(To be used on your badge at fest. Real names will be used for all other communication.)
+      </p>
+        <input type="text" name="nickName" value="" size="25" maxlength="50"/>
+        <br><br>
+        Email Address:* <input type="email" name="emailAdress" size="25" value= "" maxlength="25" />
+        <p>
+        Street Address:* <input type="text" name="streetAddress" value="" size="25" maxlength="30"/>
+      </p>
+        <p>
+        City:* <input type="text" name="city" value="" size="25" maxlength="30"/>
+      </p>
+        State:*
+        <form action="./" method="GET">
+            <select name="state">
+                <option disabled selected value> -- </option>
+                <option value="AL">AL</option>
+                <option value="AK">AK</option>
+                <option value="AZ">AZ</option>
+                <option value="AR">AR</option>
+                <option value="CA">CA</option>
+                <option value="CO">CO</option>
+                <option value="CT">CT</option>
+                <option value="DE">DE</option>
+                <option value="DC">DC</option>
+                <option value="FL">FL</option>
+                <option value="GA">GA</option>
+                <option value="HI">HI</option>
+                <option value="ID">ID</option>
+                <option value="IL">IL</option>
+                <option value="IN">IN</option>
+                <option value="IA">IA</option>
+                <option value="KS">KS</option>
+                <option value="KY">KY</option>
+                <option value="LA">LA</option>
+                <option value="ME">ME</option>
+                <option value="MD">MD</option>
+                <option value="MA">MA</option>
+                <option value="MI">MI</option>
+                <option value="MN">MN</option>
+                <option value="MS">MS</option>
+                <option value="MO">MO</option>
+                <option value="MT">MT</option>
+                <option value="NE">NE</option>
+                <option value="NV">NV</option>
+                <option value="NH">NH</option>
+                <option value="NJ">NJ</option>
+                <option value="NM">NM</option>
+                <option value="NY">NY</option>
+                <option value="NC">NC</option>
+                <option value="ND">ND</option>
+                <option value="OH">OH</option>
+                <option value="OK">OK</option>
+                <option value="OR">OR</option>
+                <option value="PA">PA</option>
+                <option value="RI">RI</option>
+                <option value="SC">SC</option>
+                <option value="SD">SD</option>
+                <option value="TN">TN</option>
+                <option value="TX">TX</option>
+                <option value="UT">UT</option>
+                <option value="VT">VT</option>
+                <option value="VA">VA</option>
+                <option value="WA">WA</option>
+                <option value="WV">WV</option>
+                <option value="WI">WI</option>
+                <option value="WY">WY</option>
+            </select>
+        </form>
+        Zip Code:* <input type="text" name="zipCode" value="" size="25" minlength="5" maxlength="5"/>
+        <p>
+        Cell Phone:* <input type="tel" name="cellPhone" value="000-000-0000" size="25" minlength="10" maxlength="12"/>
+      </p>
+        <p>
+        Home Phone: <input type="tel" name="streetAddress" value="000-000-0000" size="25" minlength="10" maxlength="12"/>
+      </p>
+        <p>
+        Date of Birth:* <input type="date"/>
+      </p>
+        <p>
+        Preferred arrival date?:* <input type="date"/>
+      </p>
+        <!--Need to add javascript for different menu options-->
+        Are you a new or returning volunteer?:*
+        <form action="./" method="GET">
+            <select name="volunteerStatus">
+                <option disabled selected value> -- </option>
+                <option value="New Volunteer">New Volunteer</option>
+                <option value="Returning Volunteer">Returning Volunteer</option>
+            </select>
+        </form>
+        <!--if newVolunteer
+            then display "Choose your preferred committee placement (selection not guaranteed:*)"
+                  //dropdown menu with "Camping, Parking, Security, Wherever I'm Needed" options
+            if retrningVolunteer
+            then display "Which committee are you volunteerig for this year?"*
+                  //dropdown menu with all committees and "Wherever I'm Needed" options
+                 display "Are you chaning committees from last year?"*
+                  //dropdown menu with yes/no option
+                 display "If YES, which committee were you a member of LAST YEAR?
+                  (Answer ONLY if you are changing committees)"
+                  //dropdown menu with all committes and "Wherever I'm Needed" options
+                  display "How many years have you volunteered at PFF?*"
+                  //dropdown menu with 0-5, 6-10, 11-15, etc. options
+        -->
+        Special Skills<br>
+        There are some committees, looking for new members, which require specialized experience.
+        If you would like to be considered for these teams please list any technical skills you have
+        that may be beneficial. We are especially interested in people with experience in the following areas:
+        <br>-Wiring or electric<br>
+        -Phones, networking, or IT<br>
+        -Video production or camera work<br>
+        <input type="text" name="specialSkills" value="" size="50" maxlength="100"/>
+        <p>
+        Do you have a valid driver's license?*<br>
+        (A valid driver's license is not necessary to volunteer, only for certain duties.)<br>
+        <form action="./" method="GET">
+            <select name="driversLincense">
+                <option disabled selected value> -- </option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </form>
+      </p>
+        Accessibility Needs:<br><input type="text" name="accessibilityNeeds" value="" size="50" maxlength="100"/>
+        <br><br><br><br>
+        Emergency Contact
+        <p>
+        Name*<br>
+        <input type="text" name="emergencyName" value="" size="25" maxlength="50" />
+        <br>Phone Number*<br><input type="text" name="emergencyNumber" value="000-000-0000" size="25" minlength="10" maxlength="10"/>
+      </p>
+        Emergency Contact (Alternative)
+        <p>
+        Name*<br>
+        <input type="text" name="emergencyNameAlternative" value="" size="25" maxlength="50" />
+        <br>Phone Number*<br><input type="text" name="emergencyNumberAlternative" value="000-000-0000" size="25" minlength="10" maxlength="10"/>
+      </p>
+        Additional comments or arrangements with a committee:<br><input type="text" name="additionalComments" value="" size="50" maxlength="100"/>
+        <br><br><br><br>
+        PFS Membership Status<br><br>
+        Are you a Philadelphia Folksong Society member?<br><br>
+        If YES, you get a discount on your Volunteer Admin fee and can select YES from the dropbox  below.<br><br>
+        If NO, and you'd like to become a member of the Philadelphia Folksong Society please join here:
+        <a href ="https://pfs.org/join-pfs-today/">https://pfs.org/join-pfs-today/</a> before selecting YES.
+        If you are not yet a member of the Society and cannot become one at this time, please select NO.<br><br>
+        If you are registering a YOUTH aged 12-16, please select Youth!<br><br>
+        After making your selection from the dropdown below, you can click SUBMIT VOLUNTEER REGISTRATION. YOU WILL NOT PAY TODAY
+        as your volunteer registration needs to be approved by your committee chair.<br><br><br><br>
+        Are You Currently a PFS Member?<br>
+        Please select YES, NO, or YOUTH based on the instructions above. Again, YOU WILL NOT BE PAYING TODAY. <br><br>
+        <form action="./" method="GET">
+            <select name="membershipStatus">
+                <option disabled selected value> -- </option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="Youth">Youth</option>
+            </select>
+        </form>
+        <br>
+        <input type="submit" name="submit" value="Submit Volunteer Registration"/>
+    </form>
+
+
+
+
+</html>
